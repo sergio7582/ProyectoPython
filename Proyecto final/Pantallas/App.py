@@ -12,8 +12,10 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/Index')
 def Index():
+    
     # Render the page
-    return "Esto es lo que llevo :) "
+    return "No se usar python no me acuerdo :( "
+
 
 if __name__ == '__main__':
     # Run the app server on localhost:4449
