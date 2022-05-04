@@ -27,13 +27,21 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="Settings\" />
-    <Folder Include="Pantallas\" />
+    <Folder Include="Proyecto\" />
+    <Folder Include="Proyecto\Static\" />
+    <Folder Include="Proyecto\Static\css\" />
+    <Folder Include="Proyecto\Static\js\" />
+    <Folder Include="Proyecto\templates\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pantallas\App.py">
+    <Compile Include="Proyecto\App.py">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Proyecto\Static\css\Site.css" />
+    <Content Include="Proyecto\Static\js\Site.js" />
+    <Content Include="Proyecto\templates\Home.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 

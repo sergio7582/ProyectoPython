@@ -1,4 +1,7 @@
+from datetime import datetime
+from flask import render_template
 from flask import Flask
+
 
 # Create an instance of the Flask class that is the WSGI application.
 # The first argument is the name of the application module or package,
@@ -12,9 +15,15 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/Index')
 def Index():
+    now = datetime.now()
+    formatted_now = now.strftime("%A, %d %B, %Y at %X")
     
     # Render the page
-    return "No se usar python no me acuerdo :( "
+    return render_template(
+        "Home.html",
+        content = formatted_now,
+        message = "Esto esta chido xd "
+        )
 
 
 if __name__ == '__main__':
