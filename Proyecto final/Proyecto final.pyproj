@@ -36,7 +36,7 @@
     <Compile Include="Proyecto\App.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Proyecto\templates\Detect_hands.py">
+    <Compile Include="Proyecto\Detect_hands.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
