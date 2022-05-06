@@ -39,6 +39,9 @@
     <Compile Include="Proyecto\Detect_hands.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Proyecto\Get_images.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Proyecto\Static\css\Site.css" />
